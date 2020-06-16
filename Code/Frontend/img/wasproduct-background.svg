@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350" height="300" viewBox="0 0 350 300">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_196" data-name="Rectangle 196" width="397.075" height="260.261" fill="#e86262"/>
+    </clipPath>
+    <clipPath id="clip-path-2"/>
+    <clipPath id="clip-product">
+      <rect width="350" height="300"/>
+    </clipPath>
+  </defs>
+  <g id="product" clip-path="url(#clip-product)">
+    <g id="middle-icon" transform="translate(-641.974 -356)">
+      <g id="wasproduct-bol" transform="translate(617.974 381)">
+        <g id="Mask_Group_7" data-name="Mask Group 7" clip-path="url(#clip-path)">
+          <ellipse id="Ellipse_9" data-name="Ellipse 9" cx="156.078" cy="156.471" rx="156.078" ry="156.471" transform="translate(41.673 -58.972)" fill="#202024"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

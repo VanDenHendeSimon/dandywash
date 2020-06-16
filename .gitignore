@@ -1,0 +1,4 @@
+Code/Backend/config.py
+Code/Backend/secret_key.txt
+Code/Backend/repositories/__pycache__
+.vscode/

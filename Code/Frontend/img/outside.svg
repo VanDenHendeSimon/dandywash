@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <clipPath id="clip-thermometer">
+      <rect width="300" height="300"/>
+    </clipPath>
+  </defs>
+  <g id="thermometer" clip-path="url(#clip-thermometer)">
+    <g id="thermometer-2" data-name="thermometer" transform="translate(-50.344 13)">
+      <path id="Path_21" data-name="Path 21" d="M229.2,170.9V28.593a28.593,28.593,0,1,0-57.185,0V170.237a55.707,55.707,0,1,0,57.185.664Zm-29.146,92.477A45,45,0,0,1,179.779,178.2a5.353,5.353,0,0,0,2.938-4.777V28.593a17.886,17.886,0,1,1,35.771,0v3.5H208.349a5.353,5.353,0,0,0,0,10.706h10.14V55.332h-10.14a5.353,5.353,0,0,0,0,10.706h10.14V174a5.353,5.353,0,0,0,2.82,4.716,45,45,0,0,1-21.259,84.666Z" transform="translate(0)" fill="#202024"/>
+    </g>
+  </g>
+</svg>

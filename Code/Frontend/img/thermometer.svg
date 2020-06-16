@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <clipPath id="clip-thermometer">
+      <rect width="400" height="400"/>
+    </clipPath>
+  </defs>
+  <g id="thermometer" clip-path="url(#clip-thermometer)">
+    <rect width="400" height="400" fill="#fff"/>
+    <g id="thermometer-2" data-name="thermometer" transform="translate(-16.344 23)">
+      <path id="temp_indicator" d="M235.831,392.451v-182.3a6.9,6.9,0,0,0-13.792,0v182.3Z" transform="translate(-12.834 39.349)" fill="#202024"/>
+      <rect id="Rectangle_200" data-name="Rectangle 200" width="270" height="122" transform="translate(89.344 255)" fill="#fff"/>
+      <g id="Ellipse_65" data-name="Ellipse 65" transform="translate(195.344 262)" fill="#fff" stroke="#202024" stroke-width="12">
+        <circle cx="20.5" cy="20.5" r="20.5" stroke="none"/>
+        <circle cx="20.5" cy="20.5" r="26.5" fill="none"/>
+      </g>
+      <path id="Path_21" data-name="Path 21" d="M253.646,220.148V36.832a36.832,36.832,0,1,0-73.664,0v182.46a71.759,71.759,0,1,0,73.664.856ZM216.1,339.273A57.973,57.973,0,0,1,189.99,229.544a6.9,6.9,0,0,0,3.785-6.154V36.832a23.04,23.04,0,1,1,46.079,0V41.34H226.793a6.9,6.9,0,1,0,0,13.792h13.061V71.276H226.793a6.9,6.9,0,1,0,0,13.792h13.061V224.134a6.9,6.9,0,0,0,3.632,6.075A57.972,57.972,0,0,1,216.1,339.273Z" transform="translate(0)" fill="#202024"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cookie&display=swap">
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/screen.css">
+
+  <!-- import socketio -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"
+    integrity="sha256-bQmrZe4yPnQrLTY+1gYylfNMBuGfnT/HKsCGX+9Xuqo=" crossorigin="anonymous"></script>
+
+  <script src="script/dataHandler.js"></script>
+  <script src="script/general.js"></script>
+  <script src="script/notifications.js"></script>
+
+  <title>Dandywash - Notificaties</title>
+</head>
+
+<body>
+  <div class="c-header">
+    <div class="o-container o-layout o-layout--align-center o-layout--justify-space-between c-header__container">
+
+      <!-- hamburger menu -->
+      <div class="c-header__hamburger-menu u-only-mobile">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </div>
+
+      <!-- Logo + Brand -->
+      <div class="c-header__title">
+        <svg class="c-header__logo" xmlns="http://www.w3.org/2000/svg" width="310" height="407" viewBox="0 0 310 407">
+          <g id="wasmachine" transform="translate(-107 -180)">
+            <rect id="main-shape" width="310" height="407" rx="19" transform="translate(107 180)" fill="#becccc" />
+            <g id="bottom-details">
+              <rect id="Rectangle_64" data-name="Rectangle 64" width="310" height="4" transform="translate(107 547)"
+                fill="#edfbfe" />
+              <rect id="Rectangle_63" data-name="Rectangle 63" width="310" height="4" transform="translate(107 545)"
+                fill="#80949b" />
+            </g>
+            <g id="top-controls">
+              <rect id="Rectangle_49" data-name="Rectangle 49" width="310" height="4" transform="translate(107 206)"
+                fill="#80949b" />
+              <rect id="Rectangle_50" data-name="Rectangle 50" width="310" height="1" transform="translate(107 209)"
+                fill="#6c7b81" />
+              <rect id="Rectangle_51" data-name="Rectangle 51" width="310" height="3" transform="translate(107 209)"
+                fill="#fbffff" />
+              <rect id="Rectangle_52" data-name="Rectangle 52" width="310" height="64" transform="translate(107 211)"
+                fill="#e2e8e8" />
+              <rect id="Rectangle_53" data-name="Rectangle 53" width="310" height="4" transform="translate(107 273)"
+                fill="#fbffff" />
+              <g id="Rectangle_54" data-name="Rectangle 54" transform="translate(192 221)" fill="#84959c" stroke="#fff"
+                stroke-width="0.3" opacity="0.92">
+                <rect width="96" height="11" rx="2" stroke="none" />
+                <rect x="-0.15" y="-0.15" width="96.3" height="11.3" rx="2.15" fill="none" />
+              </g>
+              <rect id="Rectangle_60" data-name="Rectangle 60" width="61" height="5"
+                transform="translate(314.013 211.522) rotate(90)" fill="#80949b" />
+              <g id="Group_1" data-name="Group 1">
+                <g id="Rectangle_55" data-name="Rectangle 55" transform="translate(192 247)" fill="#576071"
+                  stroke="#2b313f" stroke-width="0.3">
+                  <rect width="15" height="15" rx="0.5" stroke="none" />
+                  <rect x="0.15" y="0.15" width="14.7" height="14.7" rx="0.35" fill="none" />
+                </g>
+                <g id="Rectangle_56" data-name="Rectangle 56" transform="translate(195 243)" fill="#97b0ad"
+                  stroke="#413f3f" stroke-width="0.1">
+                  <rect width="9" height="2" rx="0.2" stroke="none" />
+                  <rect x="0.05" y="0.05" width="8.9" height="1.9" rx="0.15" fill="none" />
+                </g>
+              </g>
+              <g id="Group_4" data-name="Group 4" transform="translate(48)">
+                <g id="Rectangle_55-2" data-name="Rectangle 55" transform="translate(192 247)" fill="#576071"
+                  stroke="#2b313f" stroke-width="0.3">
+                  <rect width="15" height="15" rx="0.5" stroke="none" />
+                  <rect x="0.15" y="0.15" width="14.7" height="14.7" rx="0.35" fill="none" />
+                </g>
+                <g id="Rectangle_56-2" data-name="Rectangle 56" transform="translate(195 243)" fill="#97b0ad"
+                  stroke="#413f3f" stroke-width="0.1">
+                  <rect width="9" height="2" rx="0.2" stroke="none" />
+                  <rect x="0.05" y="0.05" width="8.9" height="1.9" rx="0.15" fill="none" />
+                </g>
+              </g>
+              <g id="Group_2" data-name="Group 2" transform="translate(24)">
+                <g id="Rectangle_55-3" data-name="Rectangle 55" transform="translate(192 247)" fill="#576071"
+                  stroke="#2b313f" stroke-width="0.3">
+                  <rect width="15" height="15" rx="0.5" stroke="none" />
+                  <rect x="0.15" y="0.15" width="14.7" height="14.7" rx="0.35" fill="none" />
+                </g>
+                <g id="Rectangle_56-3" data-name="Rectangle 56" transform="translate(195 243)" fill="#97b0ad"
+                  stroke="#413f3f" stroke-width="0.1">
+                  <rect width="9" height="2" rx="0.2" stroke="none" />
+                  <rect x="0.05" y="0.05" width="8.9" height="1.9" rx="0.15" fill="none" />
+                </g>
+              </g>
+              <g id="Group_3" data-name="Group 3" transform="translate(72)">
+                <g id="Rectangle_55-4" data-name="Rectangle 55" transform="translate(192 247)" fill="#576071"
+                  stroke="#2b313f" stroke-width="0.3">
+                  <rect width="15" height="15" rx="0.5" stroke="none" />
+                  <rect x="0.15" y="0.15" width="14.7" height="14.7" rx="0.35" fill="none" />
+                </g>
+                <g id="Rectangle_56-4" data-name="Rectangle 56" transform="translate(195 243)" fill="#97b0ad"
+                  stroke="#413f3f" stroke-width="0.1">
+                  <rect width="9" height="2" rx="0.2" stroke="none" />
+                  <rect x="0.05" y="0.05" width="8.9" height="1.9" rx="0.15" fill="none" />
+                </g>
+              </g>
+              <circle id="Ellipse_1" data-name="Ellipse 1" cx="21.5" cy="21.5" r="21.5" transform="translate(126 218)"
+                fill="#9cb4b6" />
+              <rect id="Rectangle_58" data-name="Rectangle 58" width="7" height="47" rx="3"
+                transform="translate(145 216)" fill="#f1ffff" />
+              <rect id="Rectangle_57" data-name="Rectangle 57" width="7" height="49" rx="3"
+                transform="translate(144 215)" fill="#81949a" />
+              <rect id="Rectangle_59" data-name="Rectangle 59" width="310" height="3" transform="translate(107 272)"
+                fill="#80949b" />
+              <rect id="Rectangle_61" data-name="Rectangle 61" width="70" height="9" transform="translate(333 225)"
+                fill="#fffdff" />
+              <path id="Rectangle_62" data-name="Rectangle 62"
+                d="M0,0H70a0,0,0,0,1,0,0V0A17,17,0,0,1,53,17H17A17,17,0,0,1,0,0V0A0,0,0,0,1,0,0Z"
+                transform="translate(333 234)" fill="#81949a" />
+            </g>
+            <g id="mid-circles">
+              <circle id="Ellipse_7" data-name="Ellipse 7" cx="102" cy="102" r="102" transform="translate(164 309)"
+                fill="#9db3b1" />
+              <circle id="Ellipse_2" data-name="Ellipse 2" cx="102" cy="102" r="102" transform="translate(161 307)"
+                fill="#d4ddde" />
+              <circle id="Ellipse_3" data-name="Ellipse 3" cx="77.5" cy="77.5" r="77.5" transform="translate(185 331)"
+                fill="#81949a" />
+              <circle id="Ellipse_4" data-name="Ellipse 4" cx="67.5" cy="67.5" r="67.5" transform="translate(195 341)"
+                fill="#576071" />
+              <path id="Subtraction_1" data-name="Subtraction 1"
+                d="M467.348,116.288a57.969,57.969,0,0,1-19.5-6.775,58.51,58.51,0,1,1,64.737-97.064,57.014,57.014,0,0,0-45.233,103.837Z"
+                transform="translate(-216 350)" fill="#bebec8" />
+            </g>
+          </g>
+        </svg>
+        <h1>Dandywash</h1>
+      </div>
+
+      <!-- zelfde width geven als hamburger menu voor center alignment -->
+      <div class="c-header__hamburger-menu u-only-mobile"></div>
+
+      <!-- navigatie op grote schermen (> 768px) -->
+      <ul class="o-list c-header__nav u-hide-on-mobile">
+        <li><a href="analytics.html">Analytics</a></li>
+        <!-- id wordt gebruikt voor rood bolletje aan toe te voegen in javascript (square div met radius 50%)
+                    (ook margin-right verminderen (8px - circle width)) -->
+        <li><a class="c-header__nav--active" href="notifications.html" class="js-notifications">Notificaties</a></li>
+        <li><a href="programmas.html">Programma's</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="u-only-mobile">
+    <!-- This will be visible when in mobile (min-width: 768px) -->
+    <ul class="o-list c-header__nav js-mobile-nav">
+      <li><a href="analytics.html">Analytics</a></li>
+      <!-- id wordt gebruikt voor rood bolletje aan toe te voegen in javascript (square div met radius 50%)
+            (ook margin-right verminderen (8px - circle width)) -->
+      <li><a class="c-header__nav--active" href="notifications.html" class="js-notifications">Notificaties</a></li>
+      <li><a href="programmas.html">Programma's</a></li>
+    </ul>
+  </div>
+
+  <div class="c-machines__top-level">
+    <div class="c-machines__container">
+      <section class="o-row o-row--lg u-pt-clear">
+        <div class="o-container u-margin-top-md">
+
+          <h2 class="c-page-title">Notificaties</h2>
+          <div class="c-separator"></div>
+
+          <div class="c-delete-confirm js-delete-confirm-dialog">
+            <p class="c-delete-confirm__text">Je staat op het punt iets te verwijderen.</p>
+            <p class="c-delete-confirm__text">Ben je zeker?</p>
+            <div class="o-layout o-layout--justify-space-evenly">
+              <div class="u-hoverable c-delete-confirm__btn js-cancel-delete">Nee, Annuleer</div>
+              <div class="u-hoverable c-delete-confirm__btn js-confirm-delete">Ja, Verwijder</div>
+            </div>
+          </div>
+
+          <div class="js-notifications-container"></div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</body>
+
+</html>

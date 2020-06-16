@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <clipPath id="clip-thermometer">
+      <rect width="300" height="300"/>
+    </clipPath>
+  </defs>
+  <g id="thermometer" clip-path="url(#clip-thermometer)">
+    <g id="thermometer-2" data-name="thermometer" transform="translate(-50.344 13)">
+      <g id="Group_192" data-name="Group 192">
+        <circle id="Ellipse_65" data-name="Ellipse 65" cx="46.5" cy="46.5" r="46.5" transform="translate(153.345 196)" fill="#fff"/>
+        <path id="Path_41" data-name="Path 41" d="M228.548,282.52c-3.261-.445-2.972-.94-10.706,0a25.826,25.826,0,1,0,10.706,0ZM223.2,322.9a15.119,15.119,0,1,1,15.12-15.12A15.136,15.136,0,0,1,223.2,322.9Z" transform="translate(-23.146 -88.724)" fill="#202024"/>
+      </g>
+    </g>
+  </g>
+</svg>
